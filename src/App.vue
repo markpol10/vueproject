@@ -1,50 +1,36 @@
-
 <template>
+  <div class="page-container">
+    <div>
+      <peoplespace />
+      <firstcomponent />
+      <spacestation />
+    </div>
 
-<div class="page-container">
+    <div class="mars"></div>
 
-  <div> 
-  <peoplespace />
-  <firstcomponent />
-  <spacestation />
+    <img src="./components/world.png" class="world" />
   </div>
-
-<div class="mars"></div>
-
-  <img src="./components/world.png" class="world"> 
-
-
-</div>
-
 </template>
 
 <script>
-
-import firstcomponent from './components/FirstComponent'
-import peoplespace from './components/peoplespace'
-import spacestation from './components/spacestation'
+import firstcomponent from "./components/FirstComponent";
+import peoplespace from "./components/peoplespace";
+import spacestation from "./components/spacestation";
 export default {
   name: "App",
   components: {
     peoplespace,
     firstcomponent,
-    spacestation
-  }
+    spacestation,
+  },
 };
-
-
-
 </script>
 
 <style>
-
-
-
 body {
   margin: 0;
   padding: 0;
   color: white;
-
 }
 
 .page-container {
@@ -53,7 +39,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(43,57,129,1) 19%, rgba(27,27,27,1) 64%);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(43, 57, 129, 1) 19%,
+    rgba(27, 27, 27, 1) 64%
+  );
 }
 
 .world {
@@ -75,7 +66,4 @@ body {
   background: rgba(161, 110, 74, 1);
   z-index: 0;
 }
-
-
-
 </style>
