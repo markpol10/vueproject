@@ -2,7 +2,7 @@
   <div class="page-container">
     <div>
       <peoplespace />
-      <firstcomponent />
+      <Rover />
       <spacestation />
     </div>
 
@@ -13,14 +13,14 @@
 </template>
 
 <script>
-import firstcomponent from "./components/FirstComponent";
+import Rover from "./components/Rover";
 import peoplespace from "./components/peoplespace";
 import spacestation from "./components/spacestation";
 export default {
   name: "App",
   components: {
     peoplespace,
-    firstcomponent,
+    Rover,
     spacestation,
   },
 };

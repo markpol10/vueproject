@@ -46,7 +46,7 @@ export default {
 }
 
 .astro {
-  height: 205px;
+  height: 250px;
   position: absolute;
   transform: rotate(15deg);
   text-align: center;

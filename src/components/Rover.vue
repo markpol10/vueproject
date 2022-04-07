@@ -2,7 +2,7 @@
   <div>
     <div v-for="item in list" v-bind:key="item.id" class="container">
       <img src="./curiosity.png" class="curiosity" />
-      <div class="text">
+      <div class="roverText">
         <p>Name: {{ item.name }}</p>
         <p>Current location: Mars</p>
         <p>Landing date: {{ item.landing_date }}</p>
@@ -20,7 +20,7 @@ import VueAxios from "vue-axios";
 
 Vue.use(VueAxios, axios);
 export default {
-  name: "First-component",
+  name: "Rover-mars",
   data() {
     return { list: undefined };
   },
@@ -57,14 +57,14 @@ p {
   z-index: 1;
 }
 
-.text {
+.roverText {
   opacity: 0;
   font-family: "helvetica";
   text-align: center;
   width: 250px;
 }
 
-.container:hover .text {
+.container:hover .roverText {
   opacity: 1;
   transform: translateY(-150px);
   transition: 1s;

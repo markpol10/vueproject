@@ -1,14 +1,11 @@
 <template>
-  <div class="isscont">
+  <div class="issContent">
     <h1 style="margin-top: -100px; font-family: 'helvetica'">
       Location of ISS
     </h1>
-    <br />
-    <br />
-    <br />
     <img src="./iss.png" class="iss" />
 
-    <div class="isstekst" v-for="(value, name) in iss_data" v-bind:key="value">
+    <div class="issText" v-for="(value, name) in iss_data" v-bind:key="value">
       <p>{{ name }} = {{ value }}</p>
     </div>
   </div>
@@ -40,21 +37,22 @@ export default {
 .iss {
   height: 170px;
   transform: rotate(-70deg);
+  margin-top: 70px;
 }
 
-.isscont {
+.issContent {
   position: absolute;
   left: 100px;
   top: 200px;
 }
 
-.isscont:hover .isstekst {
+.issContent:hover .issText {
   opacity: 1;
   transform: translateY(100px);
   transition: ease 1s;
 }
 
-.isscont {
+.issContent {
   width: 250px;
   position: absolute;
   top: 200px;
@@ -63,13 +61,13 @@ export default {
   cursor: pointer;
 }
 
-.isstekst {
+.issText {
   opacity: 0;
   width: 250px;
   text-align: center;
 }
 
-.isstekst p {
+.issText p {
   font-family: "helvetica";
   margin: 5px;
   border: 1px solid red;
